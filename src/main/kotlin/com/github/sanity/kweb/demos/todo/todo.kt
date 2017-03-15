@@ -23,9 +23,8 @@ fun main(args: Array<String>) {
             val ul = ul().apply {
 
                 // Add some initial items to the list
-                for (text in listOf("one", "two", "three")) {
-                    // We define this below
-                    newListItem(text)
+                listOf("one", "two", "three").map { 
+                    newListItem(it) 
                 }
             }
 

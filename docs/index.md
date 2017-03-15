@@ -85,8 +85,8 @@ fun main(args: Array<String>) {
             p().addText("Edit the text box below and click the button to add the item.  Click an item to remove it.")
 
             val ul = ul().apply {
-                for (text in listOf("one", "two", "three")) {
-                    newListItem(text)
+                listOf("one", "two", "three").map { 
+                    newListItem(it) 
                 }
             }
 
